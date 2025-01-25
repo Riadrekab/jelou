@@ -1,0 +1,46 @@
+.custom-button {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #4c956c; /* Button color */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 300;
+
+  user-select: none;
+  transition: background-color 0.3s ease;
+  transition: font-weight 0.3s ease;
+
+}
+
+.custom-button:hover {
+  background-color: #2c6e49; /* Darker shade on hover */
+  font-weight: bold;
+
+}
+
+.custom-button:active {
+  background-color: #225337; /* Even darker shade on click */
+}
+
+
+.pro-cls
+{
+  padding: 10px 20px;
+  text-align: center;
+  color : rgb(167, 167, 167);
+  font-weight: 400;
+  transition: color 0.5s ease;
+  transition: font-weight 0.5s ease;
+
+
+}
+
+
+.pro-cls:hover {
+  font-weight: bold;
+  color : rgb(13, 13, 13)
+
+}

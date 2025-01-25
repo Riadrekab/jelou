@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-background {
+  height: 85vh; /* Covers 80% of the viewport height */
+  background-image: url('../../../assets/callToActionIMG.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the area */
+  background-position: center; /* Centers the image */
+  position: relative; /* Allows layering */
+  z-index: 1; /* Keeps the background at the base */
+}
+
+.overlay {
+  height: 100%; /* Covers the background section entirely */
+  width: 100%;
+  background-color: rgba(82, 82, 82, 0.457); /* Semi-transparent white overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Places the overlay on top of the background */
+}
+
+.overlay-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 20px; /* Space between groups */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 4; /* Places overlay content above all layers */
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 750px; /* Limit maximum width */
+}
+
+.button-group {
+  display: flex; /* Arrange buttons horizontally */
+  justify-content: space-between; /* Space between buttons */
+  align-items: center; /* Center buttons vertically */
+  width: 100%; /* Use full width of the parent container */
+  gap: 15px; /* Add space between buttons */
+}
+
+.custom-button-create {
+  padding: 10px 20px;
+  background-color: #4C9591; /* Button color */
+  height: 130px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex: 1; /* Make buttons evenly stretch */
+  max-width: 240px; /* Optional: Limit button width */
+}
+
+.custom-button-create:hover {
+  background-color: #327470; /* Lighter green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.custom-button-create:active {
+  background-color: #1f5451; /* Darker green on click */
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px; /* Adjust space between buttons */
+  }
+
+  .custom-button-create {
+    width: 100%; /* Make buttons stretch to full width */
+    max-width: 300px; /* Optional: Limit max width */
+  }
+}
+
+
+.custom-button-PRO {
+  padding: 10px 20px;
+  background-color: #4c956c; /* Button color */
+  height: 130px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex: 1; /* Make buttons evenly stretch */
+  max-width: 240px; /* Optional: Limit button width */
+}
+
+.custom-button-PRO:hover {
+  background-color: #175f36; /* Lighter green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.custom-button-PRO:active {
+  background-color: #063416; /* Darker green on click */
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px; /* Adjust space between buttons */
+  }
+
+  .custom-button-PRO  {
+    width: 100%; /* Make buttons stretch to full width */
+    max-width: 300px; /* Optional: Limit max width */
+  }
+}
