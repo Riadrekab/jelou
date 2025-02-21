@@ -1,0 +1,55 @@
+.content-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 3; /* Places content above the overlay */
+  position: relative; /* Ensures proper stacking */
+}
+
+.form-container {
+  width:40%;
+  max-width: 700px; /* Optional max width */
+  margin: 2% auto; /* Centering with margin */
+  padding: 70px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container img {
+  width: 150px; /* Adjust the size as needed */
+  margin-bottom: 20px; /* Space between the image and the form fields */
+}
+
+.mb-3 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+
+
+.mb-3 input {
+  width: 65%;
+}
+
+button[type="submit"] {
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 20px; /* Add spacing between inputs and the button */
+  display: block; /* Ensures button behaves as a block element */
+  margin-left: auto;
+  margin-right: auto; /* Center the button horizontally */
+  background-color: #4c956c;
+  border: #4c956c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}

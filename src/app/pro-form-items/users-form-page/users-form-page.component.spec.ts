@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CallToActionComponent } from './call-to-action.component';
+import { UsersFormPageComponent } from './users-form-page.component';
 
-describe('CallToActionComponent', () => {
-  let component: CallToActionComponent;
-  let fixture: ComponentFixture<CallToActionComponent>;
+describe('UsersFormPageComponent', () => {
+  let component: UsersFormPageComponent;
+  let fixture: ComponentFixture<UsersFormPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CallToActionComponent]
+      imports: [UsersFormPageComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(CallToActionComponent);
+
+    fixture = TestBed.createComponent(UsersFormPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,23 @@
+<div class="full-width-div" >
+
+
+<div class="form-container">
+  <h2>Formulaire d'inscription</h2>
+
+  <!-- Step 1: Email -->
+  <div *ngIf="step === 1" [ngClass]="{'slide-left': isEmailSubmitted}" class="step">
+    <input type="email" [(ngModel)]="email" placeholder="Votre email" required>
+    <button (click)="nextStep()">Suivant</button>
+  </div>
+
+  <!-- Step 2: First Name and Last Name -->
+  <div *ngIf="step === 2" class="step">
+    <input type="text" [(ngModel)]="firstName" placeholder="Votre prénom" required>
+    <input type="text" [(ngModel)]="lastName" placeholder="Votre nom" required>
+    <button (click)="submitForm()">Soumettre</button>
+  </div>
+</div>
+
+
+</div>
+
