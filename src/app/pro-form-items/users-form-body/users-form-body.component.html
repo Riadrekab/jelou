@@ -1,23 +1,45 @@
-<div class="full-width-div" >
+<div *ngIf="isLoading" class="progress-bar-container">
+  <div class="progress-bar"></div>
+</div>
+<div class="full-width-div" style="padding-top: 80px;">
+  <div class="form-container">
 
+    <!-- Step 1: Email -->
+    <div *ngIf="step === 1" class="step">
+      <h2 style="padding-bottom: 40px;">Commencez par votre email</h2>
 
-<div class="form-container">
-  <h2>Formulaire d'inscription</h2>
+      <input type="email" [(ngModel)]="email" placeholder="Votre email" required>
+      <button (click)="nextStep()" style="margin-top: 10px;">Suivant</button>
+    </div>
 
-  <!-- Step 1: Email -->
-  <div *ngIf="step === 1" [ngClass]="{'slide-left': isEmailSubmitted}" class="step">
-    <input type="email" [(ngModel)]="email" placeholder="Votre email" required>
-    <button (click)="nextStep()">Suivant</button>
-  </div>
+    <!-- Step 2: Phone Number -->
+    <div *ngIf="step === 2" class="step">
+      <h2 style="padding-bottom: 40px;"> Avez-vous reçu un code ? </h2>
+      <input type="tel" [(ngModel)]="phone" placeholder="Code de confirmation" required>
+      <button (click)="nextStep()" style="margin-top: 10px;">Suivant</button>
+    </div>
 
-  <!-- Step 2: First Name and Last Name -->
-  <div *ngIf="step === 2" class="step">
-    <input type="text" [(ngModel)]="firstName" placeholder="Votre prénom" required>
-    <input type="text" [(ngModel)]="lastName" placeholder="Votre nom" required>
-    <button (click)="submitForm()">Soumettre</button>
+    <div *ngIf="step === 3" class="step">
+      <h2 style="padding-bottom: 40px;"> Votre numéro de téléphone</h2>
+      <input type="tel" [(ngModel)]="phone" placeholder="Votre numéro de téléphone" required>
+      <button (click)="nextStep()" style="margin-top: 10px;">Suivant</button>
+    </div>
+
+    <div *ngIf="step === 4" class="step">
+      <h2 style="padding-bottom: 40px;"> Avez-vous reçu un code ? </h2>
+      <input type="tel" [(ngModel)]="phone" placeholder="Code de confirmation" required>
+      <button (click)="nextStep()" style="margin-top: 10px;">Suivant</button>
+    </div>
+
+    <!-- Step 3: First Name and Last Name -->
+    <div *ngIf="step === 5" class="step">
+      <h2 style="padding-bottom: 40px; margin: auto;"> Et pour finir, votre nom et prénom</h2>
+      <input type="text" [(ngModel)]="firstName" placeholder="Votre prénom" required>
+      <input type="text" [(ngModel)]="lastName" placeholder="Votre nom" required>
+      <button (click)="submitForm()" style="margin-top: 10px;">Soumettre</button>
+    </div>
+
+    <!-- Progress Bar -->
+
   </div>
 </div>
-
-
-</div>
-

@@ -19,18 +19,20 @@ export class UsersFormBodyComponent {
   email = '';
   firstName = '';
   lastName = '';
-  isEmailSubmitted = false;
+  phone ='';
+  // step = 1;
+  isLoading = false; // Controls the progress bar
 
   nextStep() {
-    this.isEmailSubmitted = true;
+    this.isLoading = true; // Show progress bar
+
     setTimeout(() => {
-      this.step = 2;
-      this.isEmailSubmitted = false; // Reset the slide effect
-    }, 500); // Match the duration of the sliding animation
+      this.isLoading = false; // Hide progress bar
+      this.step++; // Move to the next step
+    }, 1000); // Delay of 1 second
   }
 
   submitForm() {
-    // Handle form submission here
-    console.log('Form submitted:', { email: this.email, firstName: this.firstName, lastName: this.lastName });
+    alert("Form submitted!");
   }
 }
