@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 
@@ -15,6 +16,9 @@ import { FormsModule } from '@angular/forms';
 
 
 export class UsersFormBodyComponent {
+
+  constructor(private router: Router){}
+
   step = 1;
   email = '';
   firstName = '';
@@ -22,6 +26,10 @@ export class UsersFormBodyComponent {
   phone ='';
   // step = 1;
   isLoading = false; // Controls the progress bar
+
+  openLink(link : string) {
+    this.router.navigate([link]);
+  }
 
   nextStep() {
     this.isLoading = true; // Show progress bar

@@ -10,6 +10,14 @@
 
       <input type="email" [(ngModel)]="email" placeholder="Votre email" required>
       <button (click)="nextStep()" style="margin-top: 10px;">Suivant</button>
+      <hr class="custom-line">
+
+      <button class="google-button">
+        <img src="assets/gl.png"
+             alt="Google Logo" class="google-logo">
+        Se connecter avec Google
+      </button>
+
     </div>
 
     <!-- Step 2: Phone Number -->
@@ -39,7 +47,8 @@
       <button (click)="submitForm()" style="margin-top: 10px;">Soumettre</button>
     </div>
 
-    <!-- Progress Bar -->
+
+
 
   </div>
 </div>

@@ -75,6 +75,44 @@ button:hover {
   background-color: #3a7d73;
 }
 
+.custom-line {
+  width: 80%;
+  border: none;
+  height: 2px;
+  background-color: #929292;
+  margin: 30px auto;
+}
+
+
+.google-button {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #c8c8c8;
+  color: #555;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.google-button:hover {
+  background-color: #f0f0f0;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+}
+
+
+
 /* Slide transitions */
 .slide-left {
   animation: slideLeft 0.5s ease-in-out forwards;
