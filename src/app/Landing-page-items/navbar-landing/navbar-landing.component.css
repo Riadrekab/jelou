@@ -2,7 +2,7 @@
   display: inline-block;
   padding: 10px 20px;
   /* Couleur principale du projet */
-  background-color: #03c6e9;
+  background-color: #00B5AD;
   color: rgb(255, 255, 255);
   text-align: center;
   border: none;
@@ -15,13 +15,13 @@
 
 .custom-button:hover {
 
-  background-color: #019db9;
+  background-color: #00E8DE;
   /* Darker shade on hover */
 
 }
 
 .custom-button:active {
-  background-color: #026476;
+  background-color: #00a59d;
   /* Even darker shade on click */
 }
 
@@ -40,16 +40,16 @@
 }
 
 .navigation-buttons:hover {
-  border-bottom: 2px solid #009ab5;
+  border-bottom: 2px solid #00B5AD;
   /* example color, change as you like */
   background-color: #f0f0f0;
   /* light grey background */
-  color: #009ab5;
+  color: #00B5AD;
   /* optionally change text color on hover */
 }
 
 .navigation-buttons:active {
-  color: #026476;
+  color: #00E8DE;
 
   /* Even darker shade on click */
 }
@@ -142,8 +142,8 @@
   /* Adds some weight for better readability */
   border-radius: 8px;
   /* Slightly rounded corners */
-  background-color: #00c3e5;
-  transition: background 0.3s ease;
+  background-color: #00B5AD;
+  transition: background-color 0.3s ease;
 
 }
 
@@ -159,7 +159,7 @@
 
 /* Hover effect */
 .submit-btn:hover {
-  background-color: #019db9;
+  background-color: #00E8DE;
   /* Darker green for a nice effect */
 }
 
