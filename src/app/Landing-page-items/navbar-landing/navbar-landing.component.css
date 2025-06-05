@@ -1,0 +1,213 @@
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  /* Couleur principale du projet */
+  background-color: #03c6e9;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 200;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+
+  background-color: #019db9;
+  /* Darker shade on hover */
+
+}
+
+.custom-button:active {
+  background-color: #026476;
+  /* Even darker shade on click */
+}
+
+.navbar-search {
+  width: 600px !important;
+}
+
+.navigation-buttons {
+  border: none;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
+  /* Optional: to keep height consistent when border appears */
+  /* padding-bottom: px; */
+}
+
+.navigation-buttons:hover {
+  border-bottom: 2px solid #009ab5;
+  /* example color, change as you like */
+  background-color: #f0f0f0;
+  /* light grey background */
+  color: #009ab5;
+  /* optionally change text color on hover */
+}
+
+.navigation-buttons:active {
+  color: #026476;
+
+  /* Even darker shade on click */
+}
+
+
+
+
+
+
+/* Overlay for the blurred background */
+.overlay-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dark semi-transparent background */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  /* Prevents elements from being too close to edges */
+}
+
+/* Center the iframe wrapper */
+.iframe-wrapper {
+  position: relative;
+  width: 40%;
+  height: auto;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make iframe responsive */
+.iframe-container {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  /* Limits the height */
+  border: none;
+  padding-top: 30px;
+}
+
+/* Form container inside iframe */
+.form-container {
+  width: 100%;
+  max-width: 350px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: grey;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+/* Center and enlarge the submit button */
+.submit-btn {
+  display: block;
+  /* Ensures the button behaves like a block element */
+  width: 50%;
+  /* Makes the button wider */
+  margin: 20px auto;
+  /* Centers the button horizontally */
+  padding: 12px 0;
+  /* Increases padding for a larger button */
+  font-size: 15px;
+  /* Makes the text larger */
+  font-weight: bold;
+  /* Adds some weight for better readability */
+  border-radius: 8px;
+  /* Slightly rounded corners */
+  background-color: #00c3e5;
+  transition: background 0.3s ease;
+
+}
+
+
+.navbar-nav.d-lg-none .nav-item:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.25rem;
+  /* optional spacing */
+  padding-bottom: 0.25rem;
+  /* optional spacing */
+}
+
+
+/* Hover effect */
+.submit-btn:hover {
+  background-color: #019db9;
+  /* Darker green for a nice effect */
+}
+
+@media (max-width: 1200px) {
+  .navbar-search {
+    width: 400px;
+  }
+
+  .navigation-buttons {
+    /* padding-top: 10px; */
+    /* padding-bottom: 5px; */
+    font-size: 12px;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+  .iframe-wrapper {
+    width: 60%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .iframe-wrapper {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .navbar-search {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .iframe-wrapper {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .navbar-search {
+    width: 150px;
+  }
+
+  .close-btn {
+    font-size: 20px;
+    /* Adjusts button size */
+  }
+}

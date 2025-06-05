@@ -1,0 +1,93 @@
+.app-background {
+  height: 80vh;
+  /* Covers 80% of the viewport height */
+  background-image: url('../../../assets/back2.jpg');
+  /* Path to your image */
+  background-size: cover;
+  /* Ensures the image covers the area */
+  background-position: center;
+  /* Centers the image */
+  position: relative;
+  /* Allows layering */
+  z-index: 1;
+  /* Keeps the background at the base */
+}
+
+.overlay {
+  height: 100%;
+  /* Covers the background section entirely */
+  width: 100%;
+  background-color: rgba(61, 61, 61, 0.637);
+  /* Semi-transparent white overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /* Places the overlay on top of the background */
+}
+
+
+
+.overlay-content {
+
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 4;
+
+  /* Places overlay content above all layers */
+}
+
+.overlay-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  /* font-weight: bold; */
+}
+
+.overlay-content h1 {
+  font-size: 2.5rem;
+
+  font-weight: bold;
+  color: #03d1f5;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 992px) {
+  .overlay-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .overlay-content h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .overlay-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay-content h2 {
+    font-size: 1.3rem;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  .overlay-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .overlay-content h2 {
+    font-size: 1rem;
+  }
+
+}
