@@ -49,3 +49,69 @@
     </div>
 
   </div>
+
+</div>
+
+<div class="app-background">
+  <!-- White overlay div -->
+  <div class="overlay">
+    <!-- Optional overlay content -->
+    <div class="overlay-content text-center">
+      <h2> Redonnez vie à vos objets </h2>
+      <a class="nav-link custom-button text-white text-center">
+        Commencer à louer
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="main-feed-div">
+
+  <div class="container">
+
+    <div class="row" style="padding: 10px 0px 40px 0px;">
+      <div class="col-6 col-lg-3 d-flex justify-content-center"
+        style="padding: 5px;"
+        *ngFor="let item of items">
+        <div class="d-flex flex-column align-items-center"
+          style="max-width: 260px; width: 100%; padding: 0px;">
+          <div class="img-div">
+            <img [src]="item.image" [alt]="item.title"
+              class="img-fluid feed-img" />
+          </div>
+          <div class="info-div">
+
+            <p class="title-p">{{item.title}}</p>
+            <p class="text-p">{{item.marque}}</p>
+            <p class="price-p">{{item.price}} / jour</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="padding: 10px 0px 40px 0px;">
+      <div class="col-6 col-lg-3 d-flex justify-content-center"
+        style="padding: 5px;"
+        *ngFor="let item of items">
+        <div class="d-flex flex-column align-items-center"
+          style="max-width: 260px; width: 100%; padding: 0px;">
+          <div class="img-div">
+            <img [src]="item.image" [alt]="item.title"
+              class="img-fluid feed-img" />
+          </div>
+          <div class="info-div">
+
+            <p class="title-p">{{item.title}}</p>
+            <p class="text-p">{{item.marque}}</p>
+            <p class="price-p">{{item.price}} / jour</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
