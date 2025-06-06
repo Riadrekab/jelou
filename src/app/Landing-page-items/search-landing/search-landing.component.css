@@ -43,7 +43,7 @@
 }
 
 .overlay-content h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: bold;
   color: #ffffff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -51,8 +51,7 @@
 }
 
 .overlay-content h1 {
-  font-size: 2.5rem;
-
+  font-size: 2.8rem;
   font-weight: bold;
   color: #00B5AD;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -61,21 +60,21 @@
 
 @media (max-width: 992px) {
   .overlay-content h1 {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
   }
 
   .overlay-content h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .overlay-content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .overlay-content h2 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 
 }
@@ -83,11 +82,11 @@
 
 @media (max-width: 400px) {
   .overlay-content h1 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .overlay-content h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
 }

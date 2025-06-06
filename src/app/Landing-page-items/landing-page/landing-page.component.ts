@@ -5,12 +5,13 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NavbarLandingComponent } from '../navbar-landing/navbar-landing.component';
 import { SearchLandingComponent } from '../search-landing/search-landing.component';
+import { MainFeedItemsComponent } from '../main-feed-items/main-feed-items.component';
 
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [CommonModule, FormsModule, NavbarLandingComponent,SearchLandingComponent],
+  imports: [CommonModule, FormsModule, NavbarLandingComponent,SearchLandingComponent,MainFeedItemsComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })
